@@ -1,0 +1,33 @@
+#menu {
+	float:left;
+	border-right-style:dotted;
+	height:100%;
+
+}
+#right{
+	float:top;
+	margin-left:200px;
+	min-width:250px;
+}
+.row {
+	display:table;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.circle {
+	background: lightblue;
+    border-radius: 50%;
+    width: 25px;
+    height: 31px;
+	border-color: black;
+	border-width:3px;
+	border-style:solid;
+	display: table-cell;
+}
+
+.memory{
+	width: 30px;
+    height: 30px;
+	
+}
