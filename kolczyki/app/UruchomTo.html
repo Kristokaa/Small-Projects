@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="logic.js"> </script>
+<script src="jquery-3.6.0.min.js"> </script>
+<script src="html2canvas.min.js"> </script>
+<link rel="stylesheet" href="scc.css">
+</head>
+<body onload="newcolor(); setup()">
+	<div id = "menu">
+	<button onclick="render()" type="button">Narysuj!</button> 
+	<button onclick="zapisz()" type="button">Zapisz!</button> 
+	<form>
+		<label for="pion">Dł. w pionie:</label><br>
+		<input type="text" id="pion" name="pion"><br>
+		<label for="poziom">Dł w poziomie:</label><br>
+		<input type="text" id="poziom" name="poziom"><br>
+		<label for="poziom">Skos:</label><br>
+		<input type="text" id="skos" name="skos"><br>
+		<input type="color" id="color" name="color"
+            value="#f6b73c" onchange="newcolor()"><br>
+		<label><input type="radio" name="food" value="color" checked> Koloruj</label><br>
+		<label><input type="radio" name="food" value="delete"> Usuwaj</label><br>
+		<label><input type="radio" name="food" value="add"> Dodawaj</label>	<br>
+		
+	</form> 
+	<label>Wersja robocza:</label><br>
+	<input type="text" id="fname" name="fname" value="nazwa pliku"><br>
+	<button onclick="save()" type="button">Zapisz</button> 
+	<input type="file" id="file-input" style="display:none;"/>
+	<input type="button" value="Wczytaj" onclick="document.getElementById('file-input').click();" />
+	<div id = "colors">
+	</div>
+	</div>
+	<div id="right" draggable="false" >
+	<p class="circle"/>
+</body>
+</html>
